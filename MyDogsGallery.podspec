@@ -9,7 +9,8 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Kapil Khedkar' => 'kapilkhedkar9@gmail.com' }
   s.source           = { :git => 'https://github.com/kapilkhedkar/MyDogsGallery.git', :tag => s.version.to_s }
-  s.platform         = :ios, '10.0'
-  s.source_files     = 'MyDogsGallery/Classes/**/*'
+  s.platform         = :ios, '12.0'
+  s.source_files     = 'MyDogsGallery/**/*.{swift}'
   s.swift_version    = '5.0'
+  s.dependency 'RealmSwift', '~> 10.0'
 end

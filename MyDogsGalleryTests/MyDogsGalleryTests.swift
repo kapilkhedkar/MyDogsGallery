@@ -7,32 +7,19 @@
 
 import XCTest
 @testable import MyDogsGallery
-import CoreData
+import RealmSwift
 
 class MyDogsGalleryTests: XCTestCase {
 
     var dogImageFetcher: DogImageFetcher!
-
+    
     override func setUpWithError() throws {
+        Realm.Configuration.defaultConfiguration.inMemoryIdentifier = self.name
         dogImageFetcher = DogImageFetcher()
-        clearCoreData()
-    }
-
-    override func tearDownWithError() throws {
-        dogImageFetcher = nil
-        clearCoreData()
     }
     
-    private func clearCoreData() {
-        let context = CoreDataStack.shared.context
-        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = DogImage.fetchRequest()
-        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
-        do {
-            try context.execute(deleteRequest)
-            try context.save()
-        } catch {
-            print("Failed to clear Core Data: \(error)")
-        }
+    override func tearDownWithError() throws {
+        dogImageFetcher = nil
     }
     
     func testGetImage() throws {
@@ -103,14 +90,13 @@ class MyDogsGalleryTests: XCTestCase {
     
     func testGetImages() throws {
         let expectation = self.expectation(description: "Fetching multiple images")
-        let numberOfImages = 5
         
-        dogImageFetcher.getImages(number: numberOfImages) { result in
+        dogImageFetcher.getImages(number: 5) { result in
             switch result {
             case .success(let imageUrls):
-                XCTAssertEqual(imageUrls.count, numberOfImages, "Should fetch \(numberOfImages) images")
-                for imageUrl in imageUrls {
-                    XCTAssertTrue(imageUrl.hasPrefix("https://"), "URL should be valid")
+                XCTAssertEqual(imageUrls.count, 5, "Should return 5 images")
+                imageUrls.forEach { url in
+                    XCTAssertTrue(url.hasPrefix("https://"), "URL should be valid")
                 }
             case .failure(let error):
                 XCTFail("Error: \(error.localizedDescription)")

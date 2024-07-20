@@ -6,15 +6,25 @@
 //
 
 import Foundation
-import CoreData
+import RealmSwift
 
 public class DogImageFetcher {
     
-    private var images: [DogImage] = []
+    private var realm: Realm!
+    private var images: Results<DogImage>!
     private var currentIndex = -1
     
     public init() {
+        setupRealm()
         loadImagesFromDatabase()
+    }
+    
+    private func setupRealm() {
+        do {
+            realm = try Realm()
+        } catch {
+            print("Error setting up Realm: \(error)")
+        }
     }
     
     public func getImage(completion: @escaping (Result<String, Error>) -> Void) {
@@ -58,7 +68,7 @@ public class DogImageFetcher {
         let nextIndex = currentIndex + 1
         if nextIndex < images.count {
             currentIndex = nextIndex
-            let imageUrl = images[nextIndex].url!
+            let imageUrl = images[nextIndex].url
             completion(.success(imageUrl))
         } else {
             getImage(completion: completion)
@@ -69,7 +79,7 @@ public class DogImageFetcher {
         let previousIndex = currentIndex - 1
         if previousIndex >= 0 {
             currentIndex = previousIndex
-            let imageUrl = images[previousIndex].url!
+            let imageUrl = images[previousIndex].url
             completion(.success(imageUrl))
         } else {
             completion(.failure(NSError(domain: "No previous image", code: 0, userInfo: nil)))
@@ -112,21 +122,19 @@ public class DogImageFetcher {
     }
     
     private func saveImageToDatabase(url: String) {
-        let context = CoreDataStack.shared.context
-        let dogImage = DogImage(context: context)
-        dogImage.url = url
-        CoreDataStack.shared.saveContext()
-        loadImagesFromDatabase()
+        do {
+            let image = DogImage()
+            image.url = url
+            try realm.write {
+                realm.add(image)
+            }
+            loadImagesFromDatabase()
+        } catch {
+            print("Error saving image to database: \(error)")
+        }
     }
     
     private func loadImagesFromDatabase() {
-        let context = CoreDataStack.shared.context
-        let fetchRequest: NSFetchRequest<DogImage> = DogImage.fetchRequest()
-        
-        do {
-            images = try context.fetch(fetchRequest)
-        } catch {
-            print("Failed to fetch images: \(error)")
-        }
+        images = realm.objects(DogImage.self)
     }
 }

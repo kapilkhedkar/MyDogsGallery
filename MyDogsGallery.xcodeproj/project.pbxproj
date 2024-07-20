@@ -10,11 +10,12 @@
 		BD1A01132C4AA8C700161F93 /* MyDogsGallery.docc in Sources */ = {isa = PBXBuildFile; fileRef = BD1A01122C4AA8C700161F93 /* MyDogsGallery.docc */; };
 		BD1A01142C4AA8C700161F93 /* MyDogsGallery.h in Headers */ = {isa = PBXBuildFile; fileRef = BD1A01112C4AA8C700161F93 /* MyDogsGallery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD1A011B2C4AA95600161F93 /* DogImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1A011A2C4AA95600161F93 /* DogImageFetcher.swift */; };
-		BD1A011E2C4AA9B000161F93 /* DogImageModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD1A011C2C4AA9B000161F93 /* DogImageModel.xcdatamodeld */; };
-		BD1A01202C4AA9FB00161F93 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1A011F2C4AA9FB00161F93 /* CoreDataStack.swift */; };
 		BD1A01232C4AAA8D00161F93 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1A01222C4AAA8D00161F93 /* Constants.swift */; };
 		BD1A012C2C4AAB9100161F93 /* MyDogsGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1A012B2C4AAB9100161F93 /* MyDogsGalleryTests.swift */; };
 		BD1A012D2C4AAB9100161F93 /* MyDogsGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1A010E2C4AA8C700161F93 /* MyDogsGallery.framework */; };
+		BD2A973D2C4BD91B00597A42 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2A973C2C4BD91B00597A42 /* DogImage.swift */; };
+		D72FFB0C24688C80E20D0F2E /* Pods_MyDogsGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F4FE4658FA68C9B8D813BE /* Pods_MyDogsGallery.framework */; };
+		F2A73C8FC3112CE5F323A0B6 /* Pods_MyDogsGallery_MyDogsGalleryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785197A3F82F0E09565492B9 /* Pods_MyDogsGallery_MyDogsGalleryTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,15 +29,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A962CFEAE7A82EDA5FEF402 /* Pods-MyDogsGallery-MyDogsGalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDogsGallery-MyDogsGalleryTests.debug.xcconfig"; path = "Target Support Files/Pods-MyDogsGallery-MyDogsGalleryTests/Pods-MyDogsGallery-MyDogsGalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		20F4FE4658FA68C9B8D813BE /* Pods_MyDogsGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDogsGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		485282283D95FA7FFFC7131C /* Pods-MyDogsGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDogsGallery.debug.xcconfig"; path = "Target Support Files/Pods-MyDogsGallery/Pods-MyDogsGallery.debug.xcconfig"; sourceTree = "<group>"; };
+		63CCC898E18EE470E9495C4F /* Pods-MyDogsGallery-MyDogsGalleryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDogsGallery-MyDogsGalleryTests.release.xcconfig"; path = "Target Support Files/Pods-MyDogsGallery-MyDogsGalleryTests/Pods-MyDogsGallery-MyDogsGalleryTests.release.xcconfig"; sourceTree = "<group>"; };
+		785197A3F82F0E09565492B9 /* Pods_MyDogsGallery_MyDogsGalleryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDogsGallery_MyDogsGalleryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C084350164133575177D34 /* Pods-MyDogsGallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDogsGallery.release.xcconfig"; path = "Target Support Files/Pods-MyDogsGallery/Pods-MyDogsGallery.release.xcconfig"; sourceTree = "<group>"; };
 		BD1A010E2C4AA8C700161F93 /* MyDogsGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyDogsGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1A01112C4AA8C700161F93 /* MyDogsGallery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDogsGallery.h; sourceTree = "<group>"; };
 		BD1A01122C4AA8C700161F93 /* MyDogsGallery.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MyDogsGallery.docc; sourceTree = "<group>"; };
 		BD1A011A2C4AA95600161F93 /* DogImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageFetcher.swift; sourceTree = "<group>"; };
-		BD1A011D2C4AA9B000161F93 /* DogImageModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DogImageModel.xcdatamodel; sourceTree = "<group>"; };
-		BD1A011F2C4AA9FB00161F93 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		BD1A01222C4AAA8D00161F93 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BD1A01292C4AAB9100161F93 /* MyDogsGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDogsGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1A012B2C4AAB9100161F93 /* MyDogsGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDogsGalleryTests.swift; sourceTree = "<group>"; };
+		BD2A973C2C4BD91B00597A42 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D72FFB0C24688C80E20D0F2E /* Pods_MyDogsGallery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +59,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD1A012D2C4AAB9100161F93 /* MyDogsGallery.framework in Frameworks */,
+				F2A73C8FC3112CE5F323A0B6 /* Pods_MyDogsGallery_MyDogsGalleryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C6471571EDD1963A51C1051 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20F4FE4658FA68C9B8D813BE /* Pods_MyDogsGallery.framework */,
+				785197A3F82F0E09565492B9 /* Pods_MyDogsGallery_MyDogsGalleryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD1A01042C4AA8C700161F93 = {
 			isa = PBXGroup;
 			children = (
 				BD1A01102C4AA8C700161F93 /* MyDogsGallery */,
 				BD1A012A2C4AAB9100161F93 /* MyDogsGalleryTests */,
 				BD1A010F2C4AA8C700161F93 /* Products */,
+				DE0FBFB5E0240AF57FDECB22 /* Pods */,
+				2C6471571EDD1963A51C1051 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,30 +98,13 @@
 		BD1A01102C4AA8C700161F93 /* MyDogsGallery */ = {
 			isa = PBXGroup;
 			children = (
-				BD1A01242C4AAB1D00161F93 /* Utils */,
-				BD1A01212C4AAA2B00161F93 /* Database */,
+				BD1A01222C4AAA8D00161F93 /* Constants.swift */,
 				BD1A01112C4AA8C700161F93 /* MyDogsGallery.h */,
 				BD1A01122C4AA8C700161F93 /* MyDogsGallery.docc */,
 				BD1A011A2C4AA95600161F93 /* DogImageFetcher.swift */,
+				BD2A973C2C4BD91B00597A42 /* DogImage.swift */,
 			);
 			path = MyDogsGallery;
-			sourceTree = "<group>";
-		};
-		BD1A01212C4AAA2B00161F93 /* Database */ = {
-			isa = PBXGroup;
-			children = (
-				BD1A011C2C4AA9B000161F93 /* DogImageModel.xcdatamodeld */,
-				BD1A011F2C4AA9FB00161F93 /* CoreDataStack.swift */,
-			);
-			path = Database;
-			sourceTree = "<group>";
-		};
-		BD1A01242C4AAB1D00161F93 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				BD1A01222C4AAA8D00161F93 /* Constants.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		BD1A012A2C4AAB9100161F93 /* MyDogsGalleryTests */ = {
@@ -111,6 +113,18 @@
 				BD1A012B2C4AAB9100161F93 /* MyDogsGalleryTests.swift */,
 			);
 			path = MyDogsGalleryTests;
+			sourceTree = "<group>";
+		};
+		DE0FBFB5E0240AF57FDECB22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				485282283D95FA7FFFC7131C /* Pods-MyDogsGallery.debug.xcconfig */,
+				79C084350164133575177D34 /* Pods-MyDogsGallery.release.xcconfig */,
+				1A962CFEAE7A82EDA5FEF402 /* Pods-MyDogsGallery-MyDogsGalleryTests.debug.xcconfig */,
+				63CCC898E18EE470E9495C4F /* Pods-MyDogsGallery-MyDogsGalleryTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +145,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD1A01172C4AA8C700161F93 /* Build configuration list for PBXNativeTarget "MyDogsGallery" */;
 			buildPhases = (
+				E75F37D510B829576BAEC0E4 /* [CP] Check Pods Manifest.lock */,
 				BD1A01092C4AA8C700161F93 /* Headers */,
 				BD1A010A2C4AA8C700161F93 /* Sources */,
 				BD1A010B2C4AA8C700161F93 /* Frameworks */,
@@ -149,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD1A01302C4AAB9100161F93 /* Build configuration list for PBXNativeTarget "MyDogsGalleryTests" */;
 			buildPhases = (
+				397BF5DB2C8B00A90CAEE074 /* [CP] Check Pods Manifest.lock */,
 				BD1A01252C4AAB9100161F93 /* Sources */,
 				BD1A01262C4AAB9100161F93 /* Frameworks */,
 				BD1A01272C4AAB9100161F93 /* Resources */,
+				6CA83D5BF82A10214E71D4A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +234,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		397BF5DB2C8B00A90CAEE074 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDogsGallery-MyDogsGalleryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CA83D5BF82A10214E71D4A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDogsGallery-MyDogsGalleryTests/Pods-MyDogsGallery-MyDogsGalleryTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDogsGallery-MyDogsGalleryTests/Pods-MyDogsGallery-MyDogsGalleryTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyDogsGallery-MyDogsGalleryTests/Pods-MyDogsGallery-MyDogsGalleryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E75F37D510B829576BAEC0E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDogsGallery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BD1A010A2C4AA8C700161F93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -224,9 +305,8 @@
 			files = (
 				BD1A01232C4AAA8D00161F93 /* Constants.swift in Sources */,
 				BD1A011B2C4AA95600161F93 /* DogImageFetcher.swift in Sources */,
-				BD1A011E2C4AA9B000161F93 /* DogImageModel.xcdatamodeld in Sources */,
+				BD2A973D2C4BD91B00597A42 /* DogImage.swift in Sources */,
 				BD1A01132C4AA8C700161F93 /* MyDogsGallery.docc in Sources */,
-				BD1A01202C4AA9FB00161F93 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +456,7 @@
 		};
 		BD1A01182C4AA8C700161F93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 485282283D95FA7FFFC7131C /* Pods-MyDogsGallery.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -410,6 +491,7 @@
 		};
 		BD1A01192C4AA8C700161F93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C084350164133575177D34 /* Pods-MyDogsGallery.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -444,6 +526,7 @@
 		};
 		BD1A01312C4AAB9100161F93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A962CFEAE7A82EDA5FEF402 /* Pods-MyDogsGallery-MyDogsGalleryTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -461,6 +544,7 @@
 		};
 		BD1A01322C4AAB9100161F93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63CCC898E18EE470E9495C4F /* Pods-MyDogsGallery-MyDogsGalleryTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -507,19 +591,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		BD1A011C2C4AA9B000161F93 /* DogImageModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				BD1A011D2C4AA9B000161F93 /* DogImageModel.xcdatamodel */,
-			);
-			currentVersion = BD1A011D2C4AA9B000161F93 /* DogImageModel.xcdatamodel */;
-			path = DogImageModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = BD1A01052C4AA8C700161F93 /* Project object */;
 }
