@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MyDogsGallery'
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = 'A simple library to fetch random dog images.'
   s.description      = <<-DESC
   MyDogsGallery is a simple Swift library that fetches random dog images from the Dog CEO API.
@@ -12,5 +12,4 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '12.0'
   s.source_files     = 'MyDogsGallery/Source/**/*'
   s.swift_version    = '5.0'
-  s.dependency 'RealmSwift', '~> 10.0'
 end
