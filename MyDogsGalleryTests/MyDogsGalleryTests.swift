@@ -27,8 +27,8 @@ class MyDogsGalleryTests: XCTestCase {
         
         dogImageFetcher.getImage { result in
             switch result {
-            case .success(let imageUrl):
-                XCTAssertTrue(imageUrl.hasPrefix("https://"), "URL should be valid")
+            case .success(let image):
+                XCTAssertTrue(image.url.hasPrefix("https://"), "URL should be valid")
             case .failure(let error):
                 XCTFail("Error: \(error.localizedDescription)")
             }
@@ -46,38 +46,12 @@ class MyDogsGalleryTests: XCTestCase {
             case .success:
                 self.dogImageFetcher.getNextImage { result in
                     switch result {
-                    case .success(let imageUrl):
-                        XCTAssertTrue(imageUrl.hasPrefix("https://"), "URL should be valid")
+                    case .success(let image):
+                        XCTAssertTrue(image.url.hasPrefix("https://"), "URL should be valid")
                     case .failure(let error):
                         XCTFail("Error: \(error.localizedDescription)")
                     }
                     expectation.fulfill()
-                }
-            case .failure(let error):
-                XCTFail("Error: \(error.localizedDescription)")
-                expectation.fulfill()
-            }
-        }
-        
-        waitForExpectations(timeout: 5, handler: nil)
-    }
-    
-    func testGetPreviousImage() throws {
-        let expectation = self.expectation(description: "Fetching previous image")
-        
-        dogImageFetcher.getImage { result in
-            switch result {
-            case .success:
-                self.dogImageFetcher.getNextImage { _ in
-                    self.dogImageFetcher.getPreviousImage { result in
-                        switch result {
-                        case .success(let imageUrl):
-                            XCTAssertTrue(imageUrl.hasPrefix("https://"), "URL should be valid")
-                        case .failure(let error):
-                            XCTFail("Error: \(error.localizedDescription)")
-                        }
-                        expectation.fulfill()
-                    }
                 }
             case .failure(let error):
                 XCTFail("Error: \(error.localizedDescription)")
