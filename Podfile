@@ -6,7 +6,7 @@ target 'MyDogsGallery' do
   use_frameworks!
 
   # Pods for MyDogsGallery
-
+  pod 'RealmSwift', '~>10'
 
   target 'MyDogsGalleryTests' do
     # Pods for testing
