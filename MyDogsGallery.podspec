@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MyDogsGallery'
-  s.version          = '0.6.0'
+  s.version          = '0.7.0'
   s.summary          = 'A simple library to fetch random dog images.'
   s.description      = <<-DESC
   MyDogsGallery is a simple Swift library that fetches random dog images from the Dog CEO API.
